@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Bares. - Creative startup Consulting One Page React Landing Page Template
+    </title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="shortcut icon" href="img/icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="syntax-highlighter/styles/shCore.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="syntax-highlighter/styles/shThemeDefault.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+    />
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body id="welcome">
+    <aside class="left-sidebar">
+      <div class="logo">
+        <div class="logo-icon">
+          <img src="img/logo.png" alt="logo" />
+        </div>
+        <div class="logo-text">Bares.</div>
+      </div>
+      <nav class="left-nav">
+        <ul id="nav">
+          <li class="current"><a href="#welcome">Welcome</a></li>
+          <li><a href="#installation">Installation</a></li>
+          <li><a href="#tmpl-structure">Structure</a></li>
+          <li><a href="#css-structure">CSS Files</a></li>
+          <li><a href="#import">Placing Form or Template</a></li>
+          <li><a href="#javascript">Dependencies</a></li>
+          <li><a href="#credit">Source and Credit</a></li>
+          <li><a href="#copyright">Copyright</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <div id="main-wrapper">
+      <div class="main-content">
+        <!-- Welcome Section -->
+        <section id="welcome">
+          <div class="content-header">
+            <h1>
+              Bares. - Creative startup Consulting One Page React Landing Page
+              Template
+            </h1>
+          </div>
+          <div class="welcome">
+            <h2 class="twenty">
+              Welcome To Bares. UI Kit - Creative React Template Documentation.
+            </h2>
+            <p>
+              Firstly, thanks for purchasing
+              <strong>Bares. React UI Kit</strong>. We really appreciate your
+              support.
+            </p>
+            <p>
+              In this document, we’ve outlined everything you need to set up and
+              customize the <strong>Bares. React Template</strong>. From
+              installation to handling components, you’ll find all the necessary
+              details here. If you run into any difficulties, you can contact us
+              at:
+            </p>
+            <li>
+              <code
+                ><a href="mailto:userthemes@gmail.com"
+                  >userthemes@gmail.com</a
+                ></code
+              >
+            </li>
+          </div>
+          <div class="features">
+            <h2 class="twenty">Template Features</h2>
+            <ul>
+              <li>Clean & Minimal Design</li>
+              <li>Built with <strong>React.js</strong></li>
+              <li>Component-based Architecture</li>
+              <li>Modern Animations (CSS/JS powered)</li>
+              <li>Fully Responsive Layout</li>
+              <li>Reusable Custom UI Components</li>
+              <li>
+                Ant Design Integration (e.g., <code>Row</code>,
+                <code>Col</code>)
+              </li>
+              <li>FontAwesome Icons</li>
+              <li>Swiper Integration</li>
+              <li>Extensive Documentation</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Installation Section -->
+        <section id="installation">
+          <div class="content-header">
+            <h1>Installing Template</h1>
+          </div>
+          <h2 class="title">Installing Template</h2>
+          <div class="section-content">
+            <ol>
+              <li>
+                After unzipping the downloaded pack, you'll find the
+                <strong>Template Folder</strong> with all the necessary files.
+              </li>
+              <li>
+                Open the project folder in your preferred code editor (e.g., VS
+                Code, Sublime Text).
+              </li>
+              <li>
+                Run the following command to install the dependencies:
+                <pre><code>npm install</code></pre>
+                <p>or</p>
+                <pre><code>yarn install</code></pre>
+              </li>
+              <li>
+                Start the development server:
+                <pre><code>npm start</code></pre>
+                <p>or</p>
+                <pre><code>yarn start</code></pre>
+              </li>
+              <li>
+                Visit
+                <a href="http://localhost:3000" target="_blank"
+                  >http://localhost:3000</a
+                >
+                to see the template in action.
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- Template Structure -->
+        <section id="tmpl-structure">
+          <h2 class="title">Template Structure</h2>
+          <p class="fifteen">
+            The template is organized into reusable React components located
+            under the <strong>/main/</strong> directory.
+          </p>
+          <pre class="brush: js"><code>
+import React from "react";
+import Section from "../main/section";
+import Container from "../main/container";
+import SectionTag from "../main/sectionTag";
+import Heading from "../main/heading";
+import { Col, Row } from "antd";
+import BaresBtn from "../main/button";
+import { FontAwesomeIcon } from "fortawesome/react-fontawesome";
+import { faArrowRight, faStar } from "fortawesome/free-solid-svg-icons";
+                </code></pre>
+
+          <h3 class="title">Example Component Usage</h3>
+          <img src="img/Screenshot 2025-04-24 170912.png" alt="" />
+        </section>
+
+        <!-- CSS Structure -->
+        <section id="css-structure">
+          <h2 class="title">CSS Files and Structure</h2>
+          <p class="fifteen">CSS files loaded into the template:</p>
+          <pre class="brush: html"><code>
+<link rel="stylesheet" href="assets/dist/framework/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="assets/dist/css/colors.css" />
+<link rel="stylesheet" href="assets/dist/css/theme.css" />
+<link rel="stylesheet" href="assets/dist/css/responsive.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="assets/dist/css/animation.css" />
+                </code></pre>
+
+          <h2 class="title">Google Web Fonts</h2>
+          <pre class="brush: html"><code>
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap");
+                </code></pre>
+        </section>
+
+        <!-- Add Section -->
+        <section id="import">
+          <h2 class="title">Placing Form or Template</h2>
+          <p>
+            If you want to add a new section to another component, simply follow
+            these steps:
+          </p>
+          <pre class="brush: html"><code>
+<section id="blog" class="Bares-blog">
+  <div class="container">
+    <h1 class="Bares-heading">Check out the story!</h1>
+    <p>These are the latest blog posts.</p>
+  </div>
+</section>
+                </code></pre>
+        </section>
+
+        <!-- Dependencies -->
+        <section id="javascript">
+          <h2 class="title">Dependencies</h2>
+          <ul>
+            <li>react</li>
+            <li>antd (Ant Design)</li>
+            <li>fortawesome/react-fontawesome</li>
+            <li>swiper</li>
+            <li>classnames</li>
+            <li>react-router-dom</li>
+            <li>framer-motion</li>
+          </ul>
+        </section>
+
+        <!-- Credits -->
+        <section id="credit">
+          <h2 class="title">Credits</h2>
+          <ul>
+            <li><a href="https://reactjs.org/">React.js</a></li>
+            <li><a href="https://ant.design/">Ant Design</a></li>
+            <li><a href="https://fontawesome.com/">Font Awesome</a></li>
+            <li><a href="https://swiperjs.com/">Swiper</a></li>
+          </ul>
+        </section>
+
+        <!-- Copyright -->
+        <section id="copyright">
+          <h2 class="title">Copyright</h2>
+          <p>&copy; 2025 Bares. All Rights Reserved</p>
+        </section>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="syntax-highlighter/scripts/shCore.js"></script>
+    <script src="syntax-highlighter/scripts/shBrushJScript.js"></script>
+    <script src="syntax-highlighter/scripts/shBrushXml.js"></script>
+    <script>
+      SyntaxHighlighter.all();
+    </script>
+  </body>
+</html>
